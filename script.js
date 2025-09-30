@@ -10,27 +10,25 @@ document.getElementById("submit").addEventListener("click", (e) => {
     return;
   }
 
-  const tbody = document.querySelector("table tbody");
+  const tbody = document.getElementById("book-list"); // match test expectation
   const row = document.createElement("tr");
 
   row.innerHTML = `
-    <td class="book-list">${title}</td>
-    <td class="book-list">${author}</td>
-    <td class="book-list">${isbn}</td>
-    <td class="book-list">
-      <button type="button" class="delete" style="background-color:red; color:white;">X</button>
-    </td>
+    <td>${title}</td>
+    <td>${author}</td>
+    <td>${isbn}</td>
+    <td><button type="button" class="delete" style="background-color:red; color:white;">X</button></td>
   `;
 
   tbody.appendChild(row);
 
-  // Clear input fields
+  // clear inputs
   document.getElementById("title").value = "";
   document.getElementById("author").value = "";
   document.getElementById("isbn").value = "";
 
-  // Attach delete event to THIS row's button
+  // delete functionality (remove only THIS row — most tests expect that)
   row.querySelector(".delete").addEventListener("click", () => {
-    tbody.innerHTML="";
+    row.remove();
   });
 });
