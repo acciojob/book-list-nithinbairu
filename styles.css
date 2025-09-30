@@ -1,1 +1,45 @@
 /*  your css code here. If applicable */
+.heading{
+	/* font-weight:bold; */
+	margin-top:2px;
+	margin-bottom:1px;
+	font-size:16px;
+}
+.input{
+	width:100%;
+	margin:3px 1px;
+	/* padding:10px; */
+	/* background-color:lightgray; */
+	font-size:17px;
+
+	border-radius:3px;
+	box-shadow:0px 0px 0px rgba(0,0,0,0.0);
+}
+#submit{
+	width:100px;
+	height:35px;
+	margin:5px 1px;
+	text-align:center;
+	border-radius:3px;
+	background-color:royalblue;
+}
+.table-striped{
+	margin:20px;
+	width:100%;
+	text-align:left;
+	/* border-top:1px solid black; */
+	border-collapse: collapse; 
+}
+.table-striped thead{
+	/* margin:20px;
+	width:100%;
+	text-align:left; */
+	border-bottom:1px solid black;
+}
+.table-striped tbody{
+	background-color:#ccc;
+	/* border-bottom:1px solid black */
+}
+.table-striped tr{
+	border-bottom:1px solid black;
+}
