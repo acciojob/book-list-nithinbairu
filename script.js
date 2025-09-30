@@ -18,7 +18,7 @@ document.getElementById("submit").addEventListener("click", (e) => {
 	<td id="book-list">${title}</td>
 	<td id="book-list">${author}</td>
 	<td id="book-list">${isbn}</td>
-	<td id="book-list"><button type="button" style="background-color:red" class="delete" >X</button></td>
+	<td id="book-list"><button type="button" class="tr" style="background-color:red" class="delete" >X</button></td>
 	`;
 	tbody.appendChild(row);
 	document.getElementById("title").value = "";
